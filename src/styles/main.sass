@@ -1,0 +1,59 @@
+@import './variables'
+@import './mixin'
+*
+  font-family: "Montserrat", sans-serif
+  margin: 0
+  padding: 0
+.container
+  max-width: 1140px
+  margin: 0 auto
+  padding: 15px
+  display: flex
+  flex-direction: column
+  position: relative
+.margin
+  margin-top: 30px
+h1
+  font-size: 2.5em
+h2
+  font-size: 1.5em
+  font-family: "Special-elite"
+  font-weight: 400
+  color: $red
+h3
+  font-size: 1.2em
+p
+  font-size: 1.1em
+span
+  font-size: 0.7em
+a
+  font-size: 1.1em
+  text-decoration: none
+a:hover
+  cursor: pointer
+.heightBlock
+  margin-top: 30px
+@include tablet
+  a
+    font-size: 1.1em
+  h3
+    font-size: 2em
+    letter-spacing: 2px
+  .margin
+    margin-top: 100px
+  .heightBlock
+    min-height: 100vh
+    margin-top: 30px
+@include screen
+  .container
+    padding: 20px 0 0
+  h1
+    font-size: 3.5em
+  h2
+    font-size: 2.5em
+  p
+    font-size: 2.1em
+  a
+    font-size: 1.2em
+  .heightBlock
+    margin-top: 60px
