@@ -1,78 +1,70 @@
 <template>
-<div class="typewriter">
+  <div class="typewriter">
     <div class="block">
       <div class="run-text">
-        <p class="text"></p>
+        <template v-for="(text, index) of texts" :key="index">
+          <p class="text text-writer" :class="{ hidden: index != current }">
+            {{ text }}
+          </p>
+        </template>
       </div>
     </div>
-</div>
+  </div>
 </template>
 <script>
 export default {
-  name: 'typewriter',
-  data () {
+  name: "typewriter",
+  data() {
     return {
-      current: -1,
+      current: 0,
       texts: [
         "I'am junior front-end developer",
         "I like to play table tennis",
-        "I am a father of two children"
-      ]
-    }
+        "I am a father of two children",
+      ],
+    };
   },
-  mounted () {
-    this.writer()
+  mounted() {
+    this.writer();
   },
   methods: {
-    writer () {
-      const block = document.querySelector('.text')
-      block.classList.remove('writer-back')
-      block.classList.remove('text-writer')
-      if(this.current === this.texts.length -1) {
-        this.current = -1
-      }
-      this.current++
-      block.textContent = `${this.texts[this.current]}`
-      block.classList.add('text-writer')
-      setTimeout(this.backWriter, 4000, block)
+    writer() {
+      setTimeout(() => {
+        this.current =
+          this.current === this.texts.length - 1 ? (this.current = 0) : this.current + 1;
+        this.writer();
+      }, 8000);
+      console.log(this.current);
     },
-    backWriter (block) {
-      block.classList.add('writer-back')
-      setTimeout(this.writer, 4000)
-    }
-  }
-}
+  },
+};
 </script>
 <style scoped lang="sass">
-.typewriter 
+.hidden
+  display: none
+.typewriter
   margin: 50px 0 0
   display: flex
 .run-text
   display: flex
   max-width: max-content
 .text-writer
-  animation: typewriter 4s steps(44), blinkTextCursor 500ms steps(44) infinite normal
+  animation: typewriter 8.1s steps(44), blinkTextCursor 500ms steps(44) infinite normal
   border-right: 2px solid rgba(255,255,255,.75)
   white-space: nowrap
   overflow: hidden
-  transform: translateY(-50%)
   font-family: "Special-elite"
   color: $red
-.writer-back
-  animation: backWriter 4s steps(44), blinkTextCursor 500ms steps(44) infinite normal
 @keyframes typewriter
-  from 
+  from
     width: 0
-  to 
+  50%
     width: 100%
-@keyframes backWriter 
-  from 
-    width: 100%
-  to 
+  to
     width: 0
 @keyframes blinkTextCursor
-  from 
+  from
     border-right-color: rgba(255,255,255,.75)
-  to 
+  to
     border-right-color: transparent
 </style>

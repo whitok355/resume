@@ -3,12 +3,11 @@
     <div class="about-content">
       <h2>About Me<span class="about-line"></span></h2>
       <p class="margin">
-        Hi, my name is Andrey Ampleev and I am novice front-end developer who is building
-        a new career from the thing I really enjoy. For a year, I have honed my skills as
-        a web-developer, learning how to build web applications with HTML, CSS,
-        JavaScript, Vue js, Node, databasing in MySQL while studying in Educational
-        Studies at GeekBrains. I've loved building things for web and been working with
-        JavaScript (ES6+), HTML & CSS, Vue.js, Node.js, MySQL recently.
+        Hi, my name is Andrey Ampleyev, and I am a novice frontend developer who is
+        building a new career on what I really like. For a year, I honed my web developer
+        skills by learning how to create web applications using HTML, GIT, CSS,
+        JavaScript, Vue js, Node. I liked creating things for the Internet and working
+        with JavaScript (S6+), HTML and CSS, Vue.js , Node.js.
       </p>
     </div>
     <img class="about-image" src="../assets/image/foto.png" alt="foto" />

@@ -18,7 +18,9 @@
       </div>
     </div>
     <div class="wrapper-footer">
-      <footer-block id="footer" />
+      <div class="container">
+        <footer-block id="footer" />
+      </div>
     </div>
     <arrowUp :scrollPosition="scrollPosition" />
   </div>
