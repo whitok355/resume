@@ -6,8 +6,8 @@
         Hi, my name is Andrey Ampleyev, and I am a novice frontend developer who is
         building a new career on what I really like. For a year, I honed my web developer
         skills by learning how to create web applications using HTML, GIT, CSS,
-        JavaScript, Vue js, Node. I liked creating things for the Internet and working
-        with JavaScript (S6+), HTML and CSS, Vue.js , Node.js.
+        JavaScript, Vue js, Node, MySQL. I liked creating things for the Internet and
+        working with JavaScript (S6+), HTML and CSS, Vue.js , Node.js, MySQL.
       </p>
     </div>
     <img class="about-image" src="../assets/image/foto.png" alt="foto" />

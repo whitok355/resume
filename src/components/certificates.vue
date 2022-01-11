@@ -52,6 +52,11 @@ export default {
           year: 2021,
           discription: "Основы программирования",
         },
+        {
+          title: 9,
+          year: 2022,
+          discription: "Основы баз данных",
+        },
       ],
     };
   },
