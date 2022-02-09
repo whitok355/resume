@@ -61,6 +61,7 @@ export default {
   flex-direction: column
   width: 100%
 .carusel-image img
+  object-fit: contain
   width: 100%
   max-height: 200px
   margin-bottom: 10px
@@ -84,9 +85,6 @@ export default {
   .carusel-image img
     width: 100%
     max-height: 400px
-  .carusel-image:hover img
-    transform: scale(1.2)
-    transition-duration: 0.5s
   .carusel-image p
     margin: 30px
 @include screen

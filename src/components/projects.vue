@@ -23,7 +23,7 @@ export default {
         {
           title: "online-store",
           year: 2021,
-          link: "https://whitok355.github.io/online-magazine/",
+          link: "https://whitok355.github.io/store/",
           discription:
             "GeekBrains graduation project. Development of an online store, with the following functionality: Adding goods, Removal of the product, Search-filtering,  Interaction with the server.Technologies used: JavaScript, Node js, express (for server development), CSS, HTML",
         },

@@ -34,7 +34,6 @@ export default {
           this.current === this.texts.length - 1 ? (this.current = 0) : this.current + 1;
         this.writer();
       }, 8000);
-      console.log(this.current);
     },
   },
 };

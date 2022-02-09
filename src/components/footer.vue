@@ -38,4 +38,12 @@ export default {
   .footer-content
     display: flex
     justify-content: space-between
+  .footer-content-block
+    width: 33%
+  .footer-content-block:first-child
+      text-align: left
+  .footer-content-block:nth-child(2)
+    text-align: center
+  .footer-content-block:last-child
+    text-align: right
 </style>
